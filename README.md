@@ -79,7 +79,7 @@ for i in range(50):
     ret, frame = cap.read()
     if not ret:
         break
-    resized_frame = cv2.resize(frame, (100, 150))  # Resize to 320x240
+    resized_frame = cv2.resize(frame, (320, 240))  # Resize to 320x240
     frame_rgb = cv2.cvtColor(resized_frame, cv2.COLOR_BGR2RGB)
     clear_output(wait=True)
     plt.imshow(frame_rgb)
@@ -115,11 +115,11 @@ cap.release()
 
 
 ### ii) Display the video
-<img width="512" height="389" alt="image" src="https://github.com/user-attachments/assets/044c03cc-fa9b-4321-907f-e5ff1a37033f" />
+<img width="512" height="389" alt="image" src="https://github.com/user-attachments/assets/9d064f7c-575f-43ac-8b65-ccbc4496c4de" />
 
 
 ### iii) Display the video by resizing the window
-<img width="266" height="389" alt="image" src="https://github.com/user-attachments/assets/175703fc-fd32-45f6-89ef-be5a6c4be38a" />
+<img width="512" height="389" alt="image" src="https://github.com/user-attachments/assets/d747f91c-d62d-4931-b562-f5249a045c9c" />
 
 ### iv) Rotate and display the video
 <img width="297" height="389" alt="image" src="https://github.com/user-attachments/assets/c8dc29a6-b733-44e9-8cca-29fe85d320d9" />
