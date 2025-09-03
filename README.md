@@ -31,12 +31,12 @@ Divide the frame into halves and assign the smaller frame and Rotate the frame u
 
 
 ## Program:
-``` Python
+```
 ### Developed By:JEGATHEESWARI R
 ### Register No:212223230092
-
+```
 ## i) Write the frame as JPG file
-
+```
 import cv2
 import matplotlib.pyplot as plt
 from IPython.display import clear_output
@@ -54,7 +54,9 @@ plt.title('Captured Frame')
 plt.axis('off')
 plt.show()
 ```
+
 ## ii) Display the video
+
 ```
 cap = cv2.VideoCapture(0)
 
