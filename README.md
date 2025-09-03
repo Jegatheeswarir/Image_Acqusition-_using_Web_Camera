@@ -33,25 +33,18 @@ Divide the frame into halves and assign the smaller frame and Rotate the frame u
 
 ## i) Write the frame as JPG file
 
-```
 import cv2
 import matplotlib.pyplot as plt
 from IPython.display import clear_output
 import time
-```
-```
+
 cap = cv2.VideoCapture(0)
 ret, frame = cap.read()
 if ret:
     cv2.imwrite("captured_frame.jpg", frame)
 cap.release()
-
-```
-```
 captured_image = cv2.imread('captured_frame.jpg')
 
-```
-```
 plt.imshow(captured_image[:,:,::-1])
 plt.title('Captured Frame')
 plt.axis('off')
@@ -74,9 +67,6 @@ for i in range(50):
 
 cap.release()
 ```
-
-
-
 ## iii) Display the video by resizing the window
 ```
 cap = cv2.VideoCapture(0)
@@ -96,9 +86,7 @@ for i in range(50):
 cap.release()
 
 ```
-
 ## iv) Rotate and display the video
-
 ```
 cap = cv2.VideoCapture(0)
 
@@ -119,32 +107,19 @@ cap.release()
 ## Output
 
 ### i) Write the frame as JPG image
-</br>
 <img width="512" height="411" alt="image" src="https://github.com/user-attachments/assets/d3b1cef2-40ed-401f-9fd8-e18bc9c34bfa" />
-
-</br>
 
 
 ### ii) Display the video
-</br>
 <img width="512" height="389" alt="image" src="https://github.com/user-attachments/assets/044c03cc-fa9b-4321-907f-e5ff1a37033f" />
-
-</br>
 
 
 ### iii) Display the video by resizing the window
-</br>
 <img width="266" height="389" alt="image" src="https://github.com/user-attachments/assets/175703fc-fd32-45f6-89ef-be5a6c4be38a" />
 
-</br>
-
-
-
 ### iv) Rotate and display the video
-</br>
 <img width="297" height="389" alt="image" src="https://github.com/user-attachments/assets/c8dc29a6-b733-44e9-8cca-29fe85d320d9" />
 
-</br>
 
 ## Result:
 Thus the image is accessed from webcamera and displayed using openCV.
